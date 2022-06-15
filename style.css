@@ -43,6 +43,8 @@ body {
 
 .navbar li a{
     color: #025157;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 li {
@@ -81,6 +83,8 @@ li {
 #title {
     color: #46484c;
     text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
 }
 
 p {
