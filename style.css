@@ -12,7 +12,8 @@ body {
 .header {
     margin: 20px 20px 30px 30px;
     font-size: 0;
-    box-shadow: rgba(112, 112, 112, 0.493) 0px 25px 20px -20px;
+    font-family: sans-serif;
+    height: 45px;
 }
 
 .header>* {
@@ -34,8 +35,14 @@ body {
 .navbar {
     width: 70%;
     text-align: left;
+}
+
+.navbar li{
+    margin: 0 25px;
+}
+
+.navbar li a{
     color: #025157;
-    font-weight: 500;
 }
 
 li {
@@ -43,10 +50,26 @@ li {
 }
 
 .actions {
+    font-size: 14px;
     width: 15%;
     text-align: left;
-    font-size: 14px;
     font-weight: 600;
+}
+
+.actions>*{
+    margin: 0 10px;
+}
+
+.actions a{
+    color:#67b54b;
+}
+
+.actions button{
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 5px;
 }
 
 /*main*/
