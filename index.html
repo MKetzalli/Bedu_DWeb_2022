@@ -14,37 +14,39 @@
 </head>
 
 <body>
-    <header class="header">
-        <a class="logoMatcha">
-            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" />
-        </a>
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="#">Products</a>
-                </li>
-                <li>
-                    <a href="#">Templates</a>
-                </li>
-                <li>
-                    <a href="#">Pricing</a>
-                </li>
-                <li>
-                    <a href="#">Customers</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Resources</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="actions">
-            <a href="#">Sign in</a>
-            <button>Start free trial</button>
-        </div>
-    </header>
+    <section class="fixed-header">
+        <header class="header">
+            <a class="logoMatcha">
+                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" />
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Templates</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Customers</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="#">Sign in</a>
+                <button>Start free trial</button>
+            </div>
+        </header>
+    </section>
     <section class="main">
         <h1 id="title">Build your blog. Build your business.</h1>
         <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.
@@ -61,7 +63,7 @@
                 id="muestra" />
         </div>
         <div class="publicidad">
-            <div>
+            <div class="video">
                 <video controls>
                     <source type="video/webm"
                         src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
@@ -70,11 +72,18 @@
                         src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
                         poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg" />
                 </video>
-                <img src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png" alt="See how it works"/>
+                <div id="imagenTexto">
+                    <p>See how <br />it works</p>
+                    <img src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
+                        alt="See how it works" />
+                </div>
             </div>
             <article>
                 <h3>Publish to your blog in minutes, not hours.</h3>
-                <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
+                <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t
+                    have hours to create content that may or may not work. With Matcha, instantly publish from our
+                    library of 10,000+ professionally written articles and build your email list faster with our
+                    powerful conversion tool.</p>
                 <form>
                     <p>Start publishing today:</p>
                     <input type="email" placeholder="Enter email" />
