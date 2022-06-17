@@ -1,6 +1,6 @@
 /*General*/
-html{
-    margin:0%;
+html {
+    margin: 0%;
     padding: 0%;
 }
 
@@ -37,11 +37,11 @@ body {
     text-align: left;
 }
 
-.navbar li{
+.navbar li {
     margin: 0 25px;
 }
 
-.navbar li a{
+.navbar li a {
     color: #025157;
     font-weight: bold;
     text-decoration: none;
@@ -58,15 +58,15 @@ li {
     font-weight: 600;
 }
 
-.actions>*{
+.actions>* {
     margin: 0 10px;
 }
 
-.actions a{
-    color:#67b54b;
+.actions a {
+    color: #67b54b;
 }
 
-.actions button{
+.actions button {
     color: white;
     background-color: #67b54b;
     padding: 12px 14px;
@@ -111,6 +111,38 @@ button {
     width: 75%;
 }
 
-.segundo{
+.segundo {
     margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+/*publicidad*/
+.publicidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 90%;*/
+    margin: 10px;
+}
+
+.publicidad img{
+    width: 30%;
+}
+
+article{
+    margin-left: 20px;
+}
+
+article h3 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    color: #025157;
+}
+
+article p {
+    color: #343434;
+}
+
+article form p {
+    color: #025157;
 }
