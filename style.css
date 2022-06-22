@@ -170,3 +170,56 @@ article p {
 article form p {
     color: #025157;
 }
+
+/*revisando grid*/
+.features{
+    background-color: #025157;
+    display: grid;
+    height: 660px;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    /*grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,330px);*/
+    text-align: left;
+    height: max-content;
+}
+
+.features>*{
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 60px;
+    border-radius: 13px;
+}
+
+.features h3{
+    font-family: verdana;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.iconTop{
+    width: 20%;
+}
+
+.iconSide{
+    width: 100%;
+    position:relative;
+}
+
+.features article{
+    display: flex;
+}
+
+.features a{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 120%;
+    color: #74BB5B;
+}
+
+.primerDiv{
+    margin-right: 2%;
+}
+
+.features p{
+    color:#979797;
+}
