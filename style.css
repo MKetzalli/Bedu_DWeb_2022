@@ -8,10 +8,11 @@ body {
     background-color: #fffbf7;
 }
 
+
 /*navbar*/
-.fixed-header{
+.fixed-header {
     position: fixed;
-    top:0%;
+    top: 0%;
     left: 0%;
     right: 0%;
     background-color: #0251574b;
@@ -140,7 +141,7 @@ button {
 #imagenTexto {
     display: flex;
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
 }
 
 #imagenTexto p {
@@ -172,54 +173,104 @@ article form p {
 }
 
 /*revisando grid*/
-.features{
+.features {
     background-color: #025157;
     display: grid;
     height: 660px;
-    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     /*grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,330px);*/
     text-align: left;
     height: max-content;
 }
 
-.features>*{
+.features>* {
     background-color: #ffffff;
     margin: 20px;
     padding: 60px;
     border-radius: 13px;
 }
 
-.features h3{
+.features h3 {
     font-family: verdana;
     font-size: 150%;
     font-weight: bold;
 }
 
-.iconTop{
+.iconTop {
     width: 20%;
 }
 
-.iconSide{
+.iconSide {
     width: 100%;
-    position:relative;
+    position: relative;
 }
 
-.features article{
+.features article {
     display: flex;
 }
 
-.features a{
+.features a {
     font-family: verdana;
     font-weight: bold;
     font-size: 120%;
     color: #74BB5B;
 }
 
-.primerDiv{
+.primerDiv {
     margin-right: 2%;
 }
 
-.features p{
-    color:#979797;
+.features p {
+    color: #979797;
+}
+
+
+
+
+/*responsive*/
+/** dispositivos móviles en vista viewport (vertical) */
+@media(max-width:575px) {
+    body {
+        background-color: #e4e4e4;
+    }
+    .navbar,
+    .actions,
+    .fixed-header {
+        display: none;
+    }
+    #title{
+        font-size: 30px;
+    }
+    #logo{
+        width: 100%;
+    }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        background-color: #2600ff;
+    }
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: #ff00bf;
+    }
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-color: #ff4800;
+    }
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+    body {
+        background-color: #d9ff00;
+    }
 }
