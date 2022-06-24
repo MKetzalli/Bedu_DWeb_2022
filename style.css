@@ -176,7 +176,7 @@ article form p {
 .features {
     background-color: #025157;
     display: grid;
-    height: 660px;
+    /*height: 660px;*/
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     /*grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,330px);*/
@@ -234,16 +234,71 @@ article form p {
     body {
         background-color: #e4e4e4;
     }
+
     .navbar,
     .actions,
     .fixed-header {
         display: none;
     }
-    #title{
+
+    #title {
         font-size: 30px;
     }
-    #logo{
+
+    #logo {
         width: 100%;
+    }
+
+    .publish>form {
+        flex-direction: column;
+    }
+
+    .publish>form>div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish>form>div>input {
+        width: 65%;
+    }
+
+    .publicidad {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .video>video {
+        width: 100%;
+    }
+
+    .publish {
+        margin-top: 10px;
+    }
+
+    .publish>h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding:0;
+        height: fit-content;
+    }
+
+    .features>* {
+        background-color: #ffffff;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .primerDiv{
+        margin: 0%;
+    }
+
+    .feature-image {
+        display: none;
     }
 }
 
@@ -271,6 +326,5 @@ article form p {
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
     body {
-        background-color: #d9ff00;
     }
 }
