@@ -16,6 +16,7 @@ body {
     left: 0%;
     right: 0%;
 }
+
 /*
 .header {
     margin: 20px 20px 30px 30px;
@@ -40,29 +41,36 @@ body {
 .logoMatcha>img {
     width: 15%;
 }
+
 .navbar {
     width: 100%;
     text-align: left;
 }
+
 .navbar li {
     margin: 0 10px;
 }
+
 .navbar li a {
     color: #025157;
     text-decoration: none;
 }
+
 li {
     display: inline;
 }
+
 .actions {
     font-size: 14px;
     width: 15%;
     text-align: left;
     font-weight: 600;
 }
+
 .actions>* {
     margin: 0 10px;
 }
+
 .actions a {
     color: #67b54b;
 }
@@ -221,6 +229,146 @@ article form p {
 
 
 
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+.success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+  
+  .success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  .success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    padding: 40px 1rem 1rem;
+  }
+  
+  .success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+  }
+  
+  .success-stories .card .card-body h3 {
+    font-size: 30px;
+    font-weight: 1000;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .success-stories .card .card-body .results {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .success-stories .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+}
+
+.success-stories .card .card-body .results p {
+    margin: 0;
+    color: #747474;
+  }
+  
+  .success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-body .card-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:-45px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+  }
+  
+  .success-stories .card .card-body .card-circle.everly img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+
+
 
 /*responsive*/
 /** dispositivos móviles en vista viewport (vertical) */
@@ -229,11 +377,12 @@ article form p {
         background-color: #e4e4e4;
     }
 
-    .navbar,
     .actions,
-    .fixed-header {
-        display: none;
+    .navbar {
+        text-align: center;
+        padding: 15px;
     }
+
 
     #title {
         font-size: 30px;
@@ -276,7 +425,7 @@ article form p {
 
     .features {
         grid-template: repeat(4, 1fr) / 1fr;
-        padding:0;
+        padding: 0;
         height: fit-content;
     }
 
@@ -287,7 +436,7 @@ article form p {
         text-align: center;
     }
 
-    .primerDiv{
+    .primerDiv {
         margin: 0%;
     }
 
@@ -296,15 +445,26 @@ article form p {
     }
 }
 
+
+@media (max-width: 991px) {}
+
+@media (max-width: 575px) {}
+
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
     body {
-        background-color: #2600ff;
+        background-color: #e4e4e4;
     }
 }
 
 /** dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+    .actions,
+    .navbar {
+        text-align: center;
+    }
+
     body {
         background-color: #ff00bf;
     }
@@ -319,6 +479,5 @@ article form p {
 
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
-    body {
-    }
+    body {}
 }
