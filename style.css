@@ -16,23 +16,6 @@ body {
     right: 0%;
 }
 
-/*
-.header {
-    margin: 20px 20px 30px 30px;
-    font-size: 0;
-    font-family: sans-serif;
-    height: 45px;
-}
-
-
-.header>* {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 45px;
-    height: 100%;
-    vertical-align: middle;
-}
-*/
 * {
     margin: 0;
     padding: 0;
@@ -112,56 +95,6 @@ body {
     border: 0;
     border-radius: 5px;
 }
-/*.logoMatcha {
-    width: 15%;
-}
-
-.logoMatcha>img {
-    width: 15%;
-}
-
-.navbar {
-    width: 100%;
-    text-align: left;
-}
-
-.navbar li {
-    margin: 0 10px;
-}
-
-.navbar li a {
-    color: #025157;
-    text-decoration: none;
-}
-
-li {
-    display: inline;
-}
-
-.actions {
-    font-size: 14px;
-    width: 15%;
-    text-align: left;
-    font-weight: 600;
-}
-
-.actions>* {
-    margin: 0 10px;
-}
-
-.actions a {
-    color: #67b54b;
-}
-
-.actions button {
-    color: white;
-    background-color: #67b54b;
-    padding: 12px 14px;
-    border: none;
-    border-radius: 5px;
-} */
-
-
 
 /*main*/
 .main {
@@ -256,10 +189,7 @@ article form p {
 .features {
     background-color: #025157;
     display: grid;
-    /*height: 660px;*/
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    /*grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,330px);*/
     text-align: left;
     height: max-content;
 }
@@ -305,8 +235,6 @@ article form p {
     color: #979797;
 }
 
-
-
 .success-stories {
     background-color: #a1d683;
     padding: 5% 15%;
@@ -347,11 +275,6 @@ article form p {
     width: 500px;
     max-width: 100%;
 }
-
-
-
-
-
 
 .success-stories .card {
     max-width: 370px;
@@ -445,9 +368,6 @@ article form p {
     width: 100%;
   }
 
-
-
-
 /*responsive*/
 /** dispositivos móviles en vista viewport (vertical) */
 @media(max-width:575px) {
@@ -523,7 +443,6 @@ article form p {
     }
 }
 
-
 @media (max-width: 991px) {}
 
 @media (max-width: 575px) {}
@@ -544,14 +463,13 @@ article form p {
     }
 
     body {
-        background-color: #ff00bf;
     }
 }
 
 /** dispositivos grandes (desktops) */
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
-        background-color: #ff4800;
+        
     }
 }
 
